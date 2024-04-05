@@ -16,3 +16,7 @@ yet uses zero-cost abstractions without the runtime overhead of a garbage collec
 dd if=/dev/urandom bs=1024 count=128 of=myfile
 cat myfile | target/debug/pipeviewer > myfile2
 ```
+##### Add some tests
+```
+yes | cargo run -- -o yes.txt
+```
